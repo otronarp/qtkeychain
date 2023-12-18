@@ -59,7 +59,7 @@ struct ErrorDescription
             return ErrorDescription(QKeychain::OtherError, Job::tr("Unable to decode the provided data"));
         }
 
-        return ErrorDescription(QKeychain::OtherError, Job::tr("Unknown error"));
+        return ErrorDescription(QKeychain::OtherError, Job::tr("Unknown error (%1)").arg(status));
     }
 };
 
